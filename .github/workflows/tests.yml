@@ -3,7 +3,7 @@ on: [push, pull_request]
 jobs:
   tests:
     name: node ${{ matrix.node-version }} / ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
+    runs-on: self-hosted
     strategy:
       matrix:
         node-version: [16, 14, 12]
